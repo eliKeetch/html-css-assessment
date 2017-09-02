@@ -1,66 +1,126 @@
+.body{
+    color: white;
+}
+
+
 .background{
-    background-image: url(img/main-bg.jpeg);
+     background-image: url(img/main-bg.jpeg); 
     background-size: cover;
     height: 100vh;
     width: 100vw;
+    color: white;
 }
 .header{
     height: 15vh;
     
     padding: 20px;
-    padding-left: 150px;
-    padding-right: 150px;
+    padding-top:40px;
+    padding-left: 10vw;
+    padding-right: 10vw;
 }
 .header-box{
     display: flex;
     justify-content: space-between;
+    color: white;
 }
 .header-box li{
     display: flex;  
     justify-content: space-around;
     font-size: 25px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+    color: white;
 
     
+}
+.wide{
+    display: inline;
+}
+.not-wide{
+    display: none !important;
 }
 .hamburger{
     height: 40px;
     width:40px;
-    visibility: hidden;
+    
+}
+.twitter{
+    height: 30px;
+    width: 30px;
+    float: right;
+    zoom: .8;
+    
 }
 .facebook{
     height: 30px;
     width: 30px;
-    visibility: hidden;
+    float: right;
+    margin-left: 55px;
+    zoom: .6;
+    
+    
+    
+}
+.cont2{
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    color: white;
+    
+}
+.arrow{
+    text-align: center;
+    position: absolute;
+    bottom: 30px;
+    height: 70px;
+    width: 70px;
+}
+.arrow2{
+    height: 70px;
+    width: 70px;
 }
 .center{
     
-    
+    text-align: center;
     margin: auto;
-    margin-top: 30vh;
-    height: 20vh;
-    width: 30vw;
+    margin-top: 15vh;
+    height: 30vh;
+    width: 450px;
+    color: white;
+    
 }
 .your{
+    
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
     text-align: center;
-    font-size: 90px;
+    font-size: 80px;
+    margin:auto;
+    /* display: inline-block; */
+
 }
 .personal{
+    
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
     text-align: center;
-    font-size: 25px;
+    font-size: 35px;
+    margin:auto;
+    display: inline-block; 
+    
+    
 }
 
 @media(max-width: 700px){
-    .hamburger{
-    visibility: visible;
-    margin-left : -90px;
-    
+  
+.wide{
+    display: none !important;
 }
-.facebook{
-    visibility: visible;
-    margin-left: 400px;
-    margin-right: -90px;
+.not-wide{
+    display: inline !important;
 }
 .header-box{
-    visibility: hidden;
+    display: inline-block;
+    width: 80vw;
 }
 }
